@@ -1,0 +1,38 @@
+<div *ngIf="item" class="items">
+  <h2>{{item.name | uppercase}} Details</h2>
+  
+   <div>
+     <label>description</label>{{item.description}}
+   <br>  
+    <label>first Bid</label>{{item.firstBid}}
+    <br>
+    <label>buy Price</label>{{item.buyPrice}}
+    <br>
+    <label>started</label>{{item.started}}
+    <br>
+    <label>ends</label>{{item.ends}}
+     <br>
+     <label>country</label>{{item.country}}
+      
+    <br>
+   <label>latitude</label>{{item.lat}}
+      
+    <br>
+    <label>longitude</label>{{item.lon}}
+    <br>
+    <label>Item location</label>{{item.location}}
+ <br>
+   
+    <label>User id</label>{{item.idUser}} 
+    
+  </div>
+  
+<div>
+      <button (click)="goBack()">
+      Back
+    </button>
+    <div  *ngIf="enabled">
+        <button routerLink="/item-edit/{{userId}}/{{item.idItem}}">Edit</button>
+    </div>
+  </div>
+</div>

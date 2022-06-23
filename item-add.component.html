@@ -1,0 +1,39 @@
+<div>
+  <h2>Item Add</h2>
+  <div>
+      
+    <label>Item Name</label>
+    <input [(ngModel)]="itemData.name" placeholder="Item name"/>
+    <br> 
+    <label>Description</label>
+    <input   [(ngModel)]="itemData.description" placeholder="Description"/>  
+    <br>
+    <label>First Bid</label>
+      <input [(ngModel)]="itemData.firstBid" placeholder="first Bid"/>
+    <br>
+    <label>Buy Price</label>
+      <input [(ngModel)]="itemData.buyPrice" placeholder="Buy Price"/>
+    <br>
+   
+    <label>Start</label>
+      <input  type="date" [(ngModel)]="itemData.started" placeholder="Start"/>
+    <br>
+     <label>End</label>
+      <input type="date" [(ngModel)]="itemData.ends" placeholder="End"/>
+    <br>
+   <label>Country</label>
+      <input [(ngModel)]="itemData.country" placeholder="Country"/>
+    <br>
+    <label>Latitude</label>
+      <input [(ngModel)]="itemData.lat" placeholder="Latitude"/>
+    <br>
+    <label>Item location</label>
+      <input [(ngModel)]="itemData.location" placeholder="Location"/>
+    <br>
+    <label>Longitude</label>
+      <input [(ngModel)]="itemData.lon" placeholder="Longitude"/>
+   
+    
+  </div>
+  <button (click)="addItem()">Save</button>
+</div>

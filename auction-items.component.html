@@ -1,0 +1,15 @@
+
+<h2>Finished Auctions</h2>
+
+Export Auction in XML or JSON Format
+<br>
+
+<ul class="items">
+  <li *ngFor="let item of userItems; let i=index;">
+    
+     {{item.name}}
+  
+    <button id="xml" (click)="exportXML(item.idItem)">XML</button>
+      <button id="json" (click)="exportJSON(item.idItem)">JSON</button>
+  </li>
+</ul>

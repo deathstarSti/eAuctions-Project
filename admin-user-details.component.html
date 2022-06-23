@@ -1,0 +1,37 @@
+<div *ngIf="user" class="users">
+  <h2>{{user.userName | uppercase}} Details</h2>
+  
+   <div>
+      
+    <label>User Name</label>{{user.userName}}
+    <br> 
+    <label>Password</label>{{user.password}}
+    <br>
+    <label>First name</label>{{user.firstName}}
+    <br>
+    <label>Last Name</label>{{user.lastName}}
+    <br>
+    <label>Email</label>{{user.email}}
+     <br>
+     <label>Phone Number</label>{{user.phoneNumber}}
+      
+    <br>
+   <label>AFM</label>{{user.afm}}
+      
+    <br>
+    <label>Address</label>{{user.address}}
+    <br>
+    <label>User location</label>{{user.location}}
+    <br>
+    <label>Country</label>{{user.country}}
+    
+  </div>
+  <div>
+  <button class="delete" title="accept user"
+      (click)="accept(user.idUser)">Accept</button>
+      
+      <button class="delete" title="delete user"
+      (click)="delete(user.idUser)">Delete</button>
+  </div>
+</div>
+

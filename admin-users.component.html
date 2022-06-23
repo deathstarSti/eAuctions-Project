@@ -1,0 +1,12 @@
+<app-admin-options></app-admin-options>
+<h2>Users Applied for Registration</h2>
+
+
+<ul class="users">
+  <li *ngFor="let user of users; let i=index;">
+    <a routerLink="/admin-user-details/{{user.idUser}}">
+     {{user.userName}}
+    </a>
+   
+  </li>
+</ul>

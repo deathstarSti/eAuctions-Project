@@ -1,0 +1,21 @@
+<app-user-options></app-user-options>
+
+
+<h2>User's Item List</h2>
+
+<div>
+  <button (click)="addItem()">
+    Add Item
+  </button>
+</div>
+
+
+<ul class="items">
+  <li *ngFor="let item of userItems;">
+    <a routerLink="/item-details/{{user.idUser}}/{{item.idItem}}">
+     {{item.name}}
+    </a>
+    <button class="delete" title="delete item"
+      (click)="delete(item.idItem)">x</button>
+  </li>
+</ul>

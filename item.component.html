@@ -1,0 +1,15 @@
+<app-user-options></app-user-options>
+
+<h2>Available Auctions for the Following Items</h2>
+
+
+
+<ul class="items">
+  <li *ngFor="let item of userItems; let i=index;">
+    <a routerLink="/item-details/{{userId}}/{{item.idItem}}">
+     {{item.name}}
+    </a>
+    <button class="delete" title="Place Bid for Item"
+      (click)="placeBid(item.idItem)">Bid</button>
+  </li>
+</ul>

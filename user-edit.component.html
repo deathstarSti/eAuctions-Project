@@ -1,0 +1,38 @@
+<div>
+  <h2>User Edit</h2>
+  <div>
+    <label>User Name</label>
+      <input [(ngModel)]="userData.userName" placeholder="Username"/>
+    <br> 
+    <label>Password</label>
+      <input type='password'  [(ngModel)]="userData.password" placeholder="Password"/>
+    <br>
+    <label>First name</label>
+      <input [(ngModel)]="userData.firstName" placeholder="firstName"/>
+    <br>
+    <label>Last Name</label>
+      <input [(ngModel)]="userData.lastName" placeholder="LastName"/>
+   <br>
+   
+    <label>Email</label>
+      <input [(ngModel)]="userData.email" placeholder="email"/>
+   <br>
+     <label>Phone Number</label>
+      <input [(ngModel)]="userData.phoneNumber" placeholder="PhoneNumber"/>
+    <br>
+   <label>AFM</label>
+      <input [(ngModel)]="userData.afm" placeholder="Afm"/>
+    <br>
+ 
+    <label>Address</label>
+      <input [(ngModel)]="userData.address" placeholder="Address"/>
+    <br>
+    <label>User location</label>
+      <input [(ngModel)]="userData.location" placeholder="Location"/>
+   <br>
+    <label>Country</label>
+      <input [(ngModel)]="userData.country" placeholder="Country"/>
+    
+  </div>
+  <button (click)="updateUser()">Save</button>
+</div>

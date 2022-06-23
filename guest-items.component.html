@@ -1,0 +1,13 @@
+
+<h2>Available Auctions for the Following Items</h2>
+
+
+
+<ul class="items">
+  <li *ngFor="let item of userItems; let i=index;">
+    <a routerLink="/guest-item-details/{{item.idItem}}">
+     {{item.name}}
+    </a>
+  </li>
+</ul>
+

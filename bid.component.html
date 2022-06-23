@@ -1,0 +1,19 @@
+<div>
+  <h2>Bid Add</h2>
+  <div *ngIf="user">
+    <!--   <h3> {{user.userName}} </h3> -->
+    User ...
+  </div>
+  <div>
+      
+    <label>Amount</label>
+    <input [(ngModel)]="bidData.amount" placeholder="Amount"/>
+    <br> 
+    
+    <br>
+    <input type="date" [(ngModel)]="bidData.time" value="{myDate | date: 'yyyy-MM-dd'}}">
+    
+  </div>
+  <button (click)="addBid()">Save</button>
+</div>
+
